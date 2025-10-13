@@ -76,10 +76,12 @@ unstracked --------------> staged
 ===================================================> git commit -am "MSG" 
 
                  <===================
+                 (from staging area to working area)
                  unstaged   <-----
                  git reset (unstaged all files)
                  git reset fileName (unstaged fileName)
 
-                               <==============================
-                   git reset --soft Head^  ==> --soft : save changes  ||  ^ : N.commits
+                               <=================================
+                              ( from local repo to staging area)
+                   git reset --soft Head^ ==> --soft : save changes  ||  ^ : N.commits
                    git reset --hard Head^ ==> --hard : remove changes ||  ^ : N.commits
