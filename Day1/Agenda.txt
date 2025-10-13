@@ -37,3 +37,7 @@ file1 , file2
                                            git commit -m 'fix: Resolve issue with login button not responding'
 
 
+=============================================> git commit -a -m "msg"
+=============================================> git commit -am "msg"
+         --- files must be added at least one time
+         --- git add 
