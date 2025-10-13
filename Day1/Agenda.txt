@@ -17,6 +17,27 @@ git init ===> local DB
 3- git add . || fileName
            
 4- git commit -m "msg"  ====> -m : message
+5- show all commits : git log      ==> commitID , msg , author , data , time   
+
+ ------------------------ commit 730dba310034c2b5d32ea96edecacc47d1dcf9fd
+Author: ayaatadel <ayaatadel128@gmail.com>
+Date:   Mon Oct 13 10:02:53 2025 +0300
+    doc:Day1 lec Note
+
+----------------> git log --oneline  ==> commitID , Commit Msg
+
+de808a7 (HEAD -> master) doc: add new commands  (last commit)
+e2782b4 feat:add script file
+
+6- exit from commits ==>  :q
+
+7- add commit on last commit ==>\
+/**
+add change 
+git add .
+git commit -m "msg" ====> create new commit =======> add changes on last commit
+-----------> git add .
+ =======> git commit --amend ===> visual (file: Git Edit message) 
 
                            watining area                 git init
 working directory            staging area                local repo            remote repo
@@ -39,5 +60,8 @@ file1 , file2
 
 =============================================> git commit -a -m "msg"
 =============================================> git commit -am "msg"
-         --- files must be added at least one time
-         --- git add 
+         --- files must be added at least one time : لازم ع الاقل الفايل يكون انضاف مره واحده
+                             يعني الفايل يكون اتنقل من مرحله untracked files
+         --- git add fileName || .
+
+
