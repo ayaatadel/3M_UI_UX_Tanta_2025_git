@@ -41,10 +41,11 @@ git commit -m "msg" ====> create new commit =======> add changes on last commit
  =======> git commit --amend ===> visual (file: Git Edit message) 
 
                            watining area                 git init
-working directory            staging area                local repo            remote repo
+working directory            staging area                local repo            remote repo (github)
 (Your Pc)                  (add code on git )
 file1 , file2
  un tracked files
+ un staging
 ====================> git add fileName1
 ====================> git add fileName1  fileName1 
 ====================> git add .
@@ -65,7 +66,7 @@ file1 , file2
                              يعني الفايل يكون اتنقل من مرحله untracked files
          --- git add fileName || .
 
-
+                                      ================================> 
 
 working directory            staging area                local repo            remote repo
 unstracked --------------> staged
@@ -85,3 +86,22 @@ unstracked --------------> staged
                               ( from local repo to staging area)
                    git reset --soft Head^ ==> --soft : save changes  ||  ^ : N.commits
                    git reset --hard Head^ ==> --hard : remove changes ||  ^ : N.commits
+
+remote Repo : github 
+1- Account on github : https://github.com/signup
+2- login on Account 
+3- create repo 
+4- link (local repo || remote repo)
+5- local : userName || email
+------------> first Time (page : Email , Passowrd)
+------- git config --global user.name "iti"
+------- git config --global user.email "iti@gmail.com"
+6- upload project 
+--- check status : git status
+---> add : git add .
+---> commit  : git commit -m "MSG"
+---> remote : git remote add origin https://github.com/ayaatadel/3M_UI_UX_Tanta_2025_git.git
+---> remote : git push origin master
+
+Link Repo : https://github.com/userName/RepoName.git
+https://github.com/ayaatadel/3M_UI_UX_Tanta_2025_git.git
