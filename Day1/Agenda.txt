@@ -66,3 +66,20 @@ file1 , file2
          --- git add fileName || .
 
 
+
+working directory            staging area                local repo            remote repo
+unstracked --------------> staged
+
+====================> git add .
+                                   =================> git commit -m "msg"
+
+===================================================> git commit -am "MSG" 
+
+                 <===================
+                 unstaged   <-----
+                 git reset (unstaged all files)
+                 git reset fileName (unstaged fileName)
+
+                               <==============================
+                   git reset --soft Head^  ==> --soft : save changes  ||  ^ : N.commits
+                   git reset --hard Head^ ==> --hard : remove changes ||  ^ : N.commits
