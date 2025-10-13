@@ -120,3 +120,31 @@ git commit -m "msg"
 git pull origin master
 git status ===> (add || commit)
 git push origin master
+
+
+
+
+
+
+=================================>
+working area                staging area            local repo              remote repo
+(unstaged)
+(unstracked files)
+
+====================> git add .
+                               
+                                =============> git commit -m "msg"
+                                                               
+                                                               ============> git push origin master
+                                                               
+                                                <=====================
+                                                        git pull origin master
+                              
+                                <===============
+                                git reset --soft Heade^     
+                                git reset --Hard Heade^   
+
+                   <=================  
+                    git reset (all) (changes ==> index , style (git add .))
+                    git reset => index , style
+                    git reset  fileName  ==> git reset index.html
