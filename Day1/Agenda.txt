@@ -100,8 +100,8 @@ remote Repo : github
 --- check status : git status
 ---> add : git add .
 ---> commit  : git commit -m "MSG"
----> remote : git remote add origin https://github.com/ayaatadel/3M_UI_UX_Tanta_2025_git.git
----> remote : git push origin master
+---> link remote repo : git remote add origin https://github.com/ayaatadel/3M_UI_UX_Tanta_2025_git.git
+---> push : git push origin master (upload all files)
 
 Link Repo : https://github.com/userName/RepoName.git
 https://github.com/ayaatadel/3M_UI_UX_Tanta_2025_git.git
