@@ -112,3 +112,11 @@ git status
 git add .
 git commit -m "Msg"
 git push origin master
+
+==============> collaboratr (upload chages)
+git status
+git add .
+git commit -m "msg"
+git pull origin master
+git status ===> (add || commit)
+git push origin master
