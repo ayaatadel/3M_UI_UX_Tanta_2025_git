@@ -19,3 +19,11 @@ git push origin master (Error ==> updates on remote u must pull)
 git pull origin master (Pull changes from remote repo )
 ---------> git status (Add || commit)
 git push origin master
+
+
+=========================> github pages  (deploy project on github)
+repo ==> public
+file ==>index.html (path of .git )
+
+repo (on github)
+settings ==> pages -> Brach (choose branch --> master)
