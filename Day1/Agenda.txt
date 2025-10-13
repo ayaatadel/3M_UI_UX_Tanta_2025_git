@@ -1,0 +1,39 @@
+====> Histroy github
+        --- problems that make developer think about git
+===> Handel environment 
+       --- tools to deal with git   ----------> local machiene
+            ---> install git (DB) 
+            win: https://git-scm.com/downloads/win ==> next - next(git bash (select))
+            linux : https://git-scm.com/downloads/linux
+            mac : https://git-scm.com/downloads/mac
+
+
+===> Commands   --> bash 
+1- initialize git ===> git init (small DB)
+ un tracked files -->  files not added to git
+git init ===> local DB
+
+2- check status : git status
+3- git add . || fileName
+           
+4- git commit -m "msg"  ====> -m : message
+
+                           watining area                 git init
+working directory            staging area                local repo            remote repo
+(Your Pc)                  (add code on git )
+file1 , file2
+ un tracked files
+====================> git add fileName1
+====================> git add fileName1  fileName1 
+====================> git add .
+
+                                           =============> git commit -m "msg"
+                                           message commit :==>
+                                           fix bug
+                                           change style 
+                                           Add feature 
+                                           git commit -m "feat:add login page"
+                                           git commit -m "test:fix add unit testing"
+                                           git commit -m 'fix: Resolve issue with login button not responding'
+
+
