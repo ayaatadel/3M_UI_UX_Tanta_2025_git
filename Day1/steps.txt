@@ -1,0 +1,21 @@
+============>  upload first time  (my repo)
+git init 
+git add .
+git commit -m "Msg"
+git remote add origin linkRepo
+git push origin master
+
+
+===========> changes and upload
+git add .
+git commit -m "msg"
+git push origin mastder
+
+===> add as collaporator (add another on as collaborator on my repo)
+
+===> code 
+---------> git status (Add || commit)
+git push origin master (Error ==> updates on remote u must pull)
+git pull origin master (Pull changes from remote repo )
+---------> git status (Add || commit)
+git push origin master
