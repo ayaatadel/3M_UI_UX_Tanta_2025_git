@@ -31,7 +31,8 @@ e2782b4 feat:add script file
 
 6- exit from commits ==>  :q
 
-7- add commit on last commit ==>\
+7- add commit on last commit ==> git commit --amend
+8- VS COde core editor ==> git config --global core.editor "code --wait"
 /**
 add change 
 git add .
