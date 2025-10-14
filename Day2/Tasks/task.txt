@@ -12,7 +12,7 @@ commit message ==> expressive
 
 -----------------> HOME -----------------> 
 Abanoub Younan Mawaad Eid  ===> nav bar links (home , about , services)
-Abdelrahman Ahmed Abdelsamee Mohamed ==> nav bar img as back ground == button
+Abdelrahman Ahmed Abdelsamee Mohamed ==> nav bar img as background == button
 Abdelrahman Ashraf Mohamed Mamdouh ==> slider (images)
 Abdelrahman Mohammed ahmed moawad ==> slider (2 buttons (next , previoes))
 Ahmed elsaied saad rashed ==> section(cards ==> 3 - section card (img,p) )
