@@ -36,3 +36,6 @@ Create Branch : git branch branchName
 -----> after creating ==> each branch is alone
 
 move to branch ==>git switch branchName
+
+
+create + switch ==> git switch -c  branchName
