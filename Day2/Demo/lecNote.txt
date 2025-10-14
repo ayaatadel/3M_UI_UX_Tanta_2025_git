@@ -111,3 +111,9 @@ compare :(branch that i want to mareg it   --> master)
    ---> solve conflicts 
    --> merge 
     ------> merge master in navbar and merge navbar in master
+
+
+
+=================================>
+README.md ==> file (documentation)
+md ==> mark down 
