@@ -71,4 +71,23 @@ git branch -D branchName
 git switch on another branch
 git push origin  -d branchName
 
+================ Remote 
+merege changes in remote on local
+--- Pull Request
+master , navbar 
+1- git switch navbar
+2- git status (add || commit)
+3- 3- git pull origin navbar
+4- git status (add || commit)
+5- git pull origin master 
+-------->  check if their any conflicts or not 
+-------> if any conflicts (solve)
+----------> add || commit 
+6- git switch master
+7- git pull origin master  
+8- git status (add || commit)
+9- git pull origin navbar 
+-------->  check if their any conflicts or not 
+-------> if any conflicts (solve)
+----------> add || commit 
 
