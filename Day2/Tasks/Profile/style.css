@@ -82,7 +82,11 @@
 }
 
 
+<<<<<<< HEAD
 .service-article p {
+=======
+p {
+>>>>>>> 480138bf96a6687f8f7f405dca38dfec10bb957f
     font-size: 16px;
     line-height: 1.6;
     color: #444;
