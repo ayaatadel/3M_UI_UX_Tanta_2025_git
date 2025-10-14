@@ -1,4 +1,4 @@
-<!-- # YourProjectName
+# Course Verdion Control Track UI/UX
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![npm version](https://img.shields.io/npm/v/react.svg)](https://www.npmjs.com/package/react)
@@ -33,10 +33,10 @@ npm install yourprojectname
 
 # or with yarn
 yarn add yourprojectname
-``` -->
+```
 
 
-# Course Verdion Control Track UI/UX
+<!-- # Course Verdion Control Track UI/UX
 ## branch Tanat
 ### Course Content
           - History
@@ -56,4 +56,4 @@ yarn add yourprojectname
 [![MarkDown sheet Sheet2: GitRepo2](https://www.markdownguide.org/extended-syntax/#tables)](Markdown)
 
 [Branches Names](https://medium.com/%40abhay.pixolo/naming-conventions-for-git-branches-a-cheatsheet-8549feca2534
-)
+) -->
