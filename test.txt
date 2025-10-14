@@ -1,0 +1,14 @@
+Merge   ===> master in navbar
+
+master --> navbar (min)
+
+master ========> navbar
+        <========
+
+1- git switch navbar
+2- git merge master
+3---> ckech if their any conflicts  ==>solve
+4- add , commit 
+5- git switch master
+6- git merge navbar
+
