@@ -140,3 +140,18 @@ show  content stashed: git stash pop
 =======
 show  content stashed: git stash pop
 >>>>>>> Stashed changes
+
+
+
+===================> stashing 
+changes --> not want (add , commit)
+move another branch 
+
+stash ==> queue (last in first out)
+
+
+make stash : git stash 
+list stash : git stash list
+clear stash : git stash clear
+show file stashed : git stash show 
+show  content stashed: git stash pop
