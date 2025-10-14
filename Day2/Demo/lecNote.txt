@@ -1,0 +1,38 @@
+* Branches
+* Stashing
+* README File
+* gitignore File
+* Organization
+* Fork
+
+
+=====================> Branches  
+
+project ===> features --> login , register , navbar , footer 
+
+structure ===> master
+
+features --> login , register , navbar , footer (Branches)
+
+Master << dev
+branch ==> login   ^
+branch ==> register ^
+branch ==> navbar   ^
+
+
+Naming Of Branches ===>
+feature/login
+feature/register
+fix/fixBug-AddToCart
+/***
+** navbar
+** cards
+** footer
+**/
+
+
+Create Branch : git branch branchName
+----- first time ===> new brach --> all changes (parent)
+-----> after creating ==> each branch is alone
+
+move to branch ==>git switch branchName
