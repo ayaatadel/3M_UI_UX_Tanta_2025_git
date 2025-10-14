@@ -83,11 +83,13 @@ master , navbar
 -------->  check if their any conflicts or not 
 -------> if any conflicts (solve)
 ----------> add || commit 
-6- git switch master
-7- git pull origin master  
-8- git status (add || commit)
-9- git pull origin navbar 
+6- git push origin navbar
+7- git switch master
+8- git pull origin master  
+9- git status (add || commit)
+10- git pull origin navbar 
 -------->  check if their any conflicts or not 
 -------> if any conflicts (solve)
 ----------> add || commit 
+11- git push origin master
 
