@@ -63,4 +63,12 @@ smmall ===>
 1- git switch branch
 2- git push origin navbar
 
+==========> delete brach 
+1- local 
+git switch on another branch
+git branch -D branchName
+2- remote
+git switch on another branch
+git push origin  -d branchName
+
 
