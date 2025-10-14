@@ -1,0 +1,150 @@
+====> Histroy github
+        --- problems that make developer think about git
+===> Handel environment 
+       --- tools to deal with git   ----------> local machiene
+            ---> install git (DB) 
+            win: https://git-scm.com/downloads/win ==> next - next(git bash (select))
+            linux : https://git-scm.com/downloads/linux
+            mac : https://git-scm.com/downloads/mac
+
+
+===> Commands   --> bash 
+1- initialize git ===> git init (small DB)
+ un tracked files -->  files not added to git
+git init ===> local DB
+
+2- check status : git status
+3- git add . || fileName
+           
+4- git commit -m "msg"  ====> -m : message
+5- show all commits : git log      ==> commitID , msg , author , data , time   
+
+ ------------------------ commit 730dba310034c2b5d32ea96edecacc47d1dcf9fd
+Author: ayaatadel <ayaatadel128@gmail.com>
+Date:   Mon Oct 13 10:02:53 2025 +0300
+    doc:Day1 lec Note
+
+----------------> git log --oneline  ==> commitID , Commit Msg
+
+de808a7 (HEAD -> master) doc: add new commands  (last commit)
+e2782b4 feat:add script file
+
+6- exit from commits ==>  :q
+
+7- add commit on last commit ==> git commit --amend
+8- VS COde core editor ==> git config --global core.editor "code --wait"
+/**
+add change 
+git add .
+git commit -m "msg" ====> create new commit =======> add changes on last commit
+-----------> git add .
+ =======> git commit --amend ===> visual (file: Git Edit message) 
+
+                           watining area                 git init
+working directory            staging area                local repo            remote repo (github)
+(Your Pc)                  (add code on git )
+file1 , file2
+ un tracked files
+ un staging
+====================> git add fileName1
+====================> git add fileName1  fileName1 
+====================> git add .
+
+                                           =============> git commit -m "msg"
+                                           message commit :==>
+                                           fix bug
+                                           change style 
+                                           Add feature 
+                                           git commit -m "feat:add login page"
+                                           git commit -m "test:fix add unit testing"
+                                           git commit -m 'fix: Resolve issue with login button not responding'
+
+
+=============================================> git commit -a -m "msg"
+=============================================> git commit -am "msg"
+         --- files must be added at least one time : لازم ع الاقل الفايل يكون انضاف مره واحده
+                             يعني الفايل يكون اتنقل من مرحله untracked files
+         --- git add fileName || .
+
+                                      ================================> 
+
+working directory            staging area                local repo            remote repo
+unstracked --------------> staged
+
+====================> git add .
+                                   =================> git commit -m "msg"
+
+===================================================> git commit -am "MSG" 
+
+                 <===================
+                 (from staging area to working area)
+                 unstaged   <-----
+                 git reset (unstaged all files)
+                 git reset fileName (unstaged fileName)
+
+                               <=================================
+                              ( from local repo to staging area)
+                   git reset --soft Head^ ==> --soft : save changes  ||  ^ : N.commits
+                   git reset --hard Head^ ==> --hard : remove changes ||  ^ : N.commits
+
+remote Repo : github 
+1- Account on github : https://github.com/signup
+2- login on Account 
+3- create repo 
+4- link (local repo || remote repo)
+5- local : userName || email
+------------> first Time (page : Email , Passowrd)
+------- git config --global user.name "iti"
+------- git config --global user.email "iti@gmail.com"
+6- upload project 
+--- check status : git status
+---> add : git add .
+---> commit  : git commit -m "MSG"
+---> link remote repo : git remote add origin https://github.com/ayaatadel/3M_UI_UX_Tanta_2025_git.git
+---> push : git push origin master (upload all files)
+
+Link Repo : https://github.com/userName/RepoName.git
+https://github.com/ayaatadel/3M_UI_UX_Tanta_2025_git.git
+
+
+========================> New Change 
+git status 
+git add .
+git commit -m "Msg"
+git push origin master
+
+==============> collaboratr (upload chages)
+git status
+git add .
+git commit -m "msg"
+git pull origin master
+git status ===> (add || commit)
+git push origin master
+
+
+
+
+
+
+=================================>
+working area                staging area            local repo              remote repo
+(unstaged)
+(unstracked files)
+
+====================> git add .
+                               
+                                =============> git commit -m "msg"
+                                                               
+                                                               ============> git push origin master
+                                                               
+                                                <=====================
+                                                        git pull origin master
+                              
+                                <===============
+                                git reset --soft Heade^     
+                                git reset --Hard Heade^   
+
+                   <=================  
+                    git reset (all) (changes ==> index , style (git add .))
+                    git reset => index , style
+                    git reset  fileName  ==> git reset index.html

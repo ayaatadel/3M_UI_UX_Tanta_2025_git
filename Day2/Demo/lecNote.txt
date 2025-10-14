@@ -1,0 +1,149 @@
+* Branches
+* Stashing
+* README File
+* gitignore File
+* Organization
+* Fork
+
+
+=====================> Branches  
+
+project ===> features --> login , register , navbar , footer 
+
+structure ===> master
+
+features --> login , register , navbar , footer (Branches)
+
+Master << dev
+branch ==> login   ^
+branch ==> register ^
+branch ==> navbar   ^
+
+
+Naming Of Branches ===>
+feature/login
+feature/register
+fix/fixBug-AddToCart
+/***
+** navbar
+** cards
+** footer
+**/
+
+
+Create Branch : git branch branchName
+----- first time ===> new brach --> all changes (parent)
+-----> after creating ==> each branch is alone
+
+move to branch ==>git switch branchName
+
+
+create + switch ==> git switch -c  branchName
+list branches ==> git branch
+
+===================> Merge branches with master
+small --> big
+master ---> navbar
+smmall ===>
+1- git switch navbar
+2- git status (add || commit)
+3- git merge master 
+4- check if their any conflicts or not 
+-------> if any conflicts (solve)
+  ----------> add || commit 
+5- git switch master 
+6- git status (add || commit)
+7- git merge navbar
+8- check if their any conflicts or not 
+-------> if any conflicts (solve)
+  ----------> add || commit 
+
+
+=================> local ==> remote
+1- git switch branch
+2- git push origin navbar
+
+==========> delete brach 
+1- local 
+git switch on another branch
+git branch -D branchName
+2- remote
+git switch on another branch
+git push origin  -d branchName
+
+================ Remote 
+merege changes in remote on local
+--- Pull Request
+master , navbar 
+1- git switch navbar
+2- git status (add || commit)
+3- 3- git pull origin navbar
+4- git status (add || commit)
+5- git pull origin master 
+-------->  check if their any conflicts or not 
+-------> if any conflicts (solve)
+----------> add || commit 
+6- git push origin navbar
+7- git switch master
+8- git pull origin master  
+9- git status (add || commit)
+10- git pull origin navbar 
+-------->  check if their any conflicts or not 
+-------> if any conflicts (solve)
+----------> add || commit 
+11- git push origin master
+
+------------------------>
+PULL Request 
+remote --> github
+(pull request (master in navbar))
+Pull requsted --> new pull requst 
+base : (branch that i want to merge master in it --> navbar)
+compare :(branch that i want to mareg it   --> master)
+
+------> able to merge automaticilly 
+--> marge master in navbar 
+---> but it not merge navbar in master --> y must maske another pull request to merge nav in master 
+
+
+------> un able to merge automaticilly --> conflict 
+   --------> create pull requst 
+   ---> solve conflicts 
+   --> merge 
+    ------> merge master in navbar and merge navbar in master
+
+
+
+=================================>
+README.md ==> file (documentation)
+md ==> mark down 
+
+=====================>
+.gitignore ===> files || folder ==> any thing that you don't want to upload it on github
+
+
+
+
+===================> stashing 
+changes --> not want (add , commit)
+move another branch 
+
+stash ==> queue (last in first out)
+
+
+make stash : git stash 
+list stash : git stash list
+clear stash : git stash clear (remove all stashed)
+show file stashed : git stash show (show file that have stash)
+show  content stashed: git stash pop (show content + remove from queue)
+show  content stashed: git stash apply (show content + save in queue)
+delete specific stash : git stash drop id_stash(stash@{0})
+
+
+-----------> more than one stash 
+git stash apply (show content of stash -> still save in queue)
+git add .
+git commit -m "msg"
+git stash apply 
+git add .
+git commit -m "msg"

@@ -1,0 +1,39 @@
+========> write your name and id in name file
+
+=========> create organization ==> and create repo in this organization --> and invite me 
+---------------------> repo (README file , .gitIgnore)
+==========> fork from my repo (check if u has ability to make change in fork repo )
+
+=============================================>
+
+
+in index .html (tasks)  =======> task (branch : Name of branch is taskName )
+commit message ==> expressive
+
+-----------------> HOME -----------------> 
+Abanoub Younan Mawaad Eid  ===> nav bar links (home , about , services)
+Abdelrahman Ahmed Abdelsamee Mohamed ==> nav bar img as back ground == button
+Abdelrahman Ashraf Mohamed Mamdouh ==> slider (images)
+Abdelrahman Mohammed ahmed moawad ==> slider (2 buttons (next , previoes))
+Ahmed elsaied saad rashed ==> section(cards ==> 3 - section card (img,p) )
+Ahmed Mohammed AbdElnaby Ashour ==>section(cards ==> section card (add to cart , price ))
+Ahmed Roby Hamed Roby ===> section (orders ==> section (img , product name , price))
+Ahmed salah ali mohamed el shafey ==> (services  section (img , product name , description))
+Aya Magdy Mahmoud Eldahshan ===> footer (section (links , icons , copyright))
+--------------> About
+Aya Mostafa Esmail Elsheikh ===> nav bar links (home , about , services)
+dina salah abdelmoaem abdo ==> nav bar img as back ground == button
+Esraa Mostafa Abd El Haq Zakaria ===> section (form , contact us)
+Farah Ahmed El sabry Abou Elezz  ==> slider (imgs -> person name )
+Hany Mamdouh Ramadhan Makled ===> footer (section (links , icons , copyright))
+
+--------------> services 
+
+Hassan Ahmed Mohamed Sabry ===> nav bar links (home , about , services)
+Jehan Usama Mohamed Fathy Mohamed Shams El-Deen ==> nav bar img as back ground == button
+Mohamed Ibrahim Mohamed Rizk ==> section :  map 
+Mohamed Nasef Farag Haggag   ==> slider (services)
+Mona Emad Ahmed Ataalla  ==>  setion (p : atricle )
+Rana Abdelrahman Mahmoud Abdelrahman ==> form (contact)
+Reham Taha Ibrahim abdelqader ==> section (p , img )
+Salma gamal elsayed elsawaf  ===> footer (section (links , icons , copyright))
