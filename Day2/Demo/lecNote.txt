@@ -121,25 +121,6 @@ md ==> mark down
 =====================>
 .gitignore ===> files || folder ==> any thing that you don't want to upload it on github
 
-Test
-
-
-===================> stashing 
-changes --> not want (add , commit)
-move another branch 
-
-stash ==> queue (last in first out)
-
-
-make stash : git stash 
-list stash : git stash list
-clear stash : git stash clear
-show file stashed : git stash show 
-<<<<<<< Updated upstream
-show  content stashed: git stash pop
-=======
-show  content stashed: git stash pop
->>>>>>> Stashed changes
 
 
 
@@ -153,5 +134,16 @@ stash ==> queue (last in first out)
 make stash : git stash 
 list stash : git stash list
 clear stash : git stash clear
-show file stashed : git stash show 
-show  content stashed: git stash pop
+show file stashed : git stash show (show file that have stash)
+show  content stashed: git stash pop (show content + remove from queue)
+show  content stashed: git stash apply (show content + save in queue)
+
+
+
+-----------> more than one stash 
+git stash apply (show content of stash -> still save in queue)
+git add .
+git commit -m "msg"
+git stash apply 
+git add .
+git commit -m "msg"
