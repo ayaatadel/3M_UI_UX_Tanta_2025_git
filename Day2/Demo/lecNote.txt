@@ -39,3 +39,55 @@ move to branch ==>git switch branchName
 
 
 create + switch ==> git switch -c  branchName
+list branches ==> git branch
+
+===================> Merge branches with master
+small --> big
+master ---> navbar
+smmall ===>
+1- git switch navbar
+2- git status (add || commit)
+3- git merge master 
+4- check if their any conflicts or not 
+-------> if any conflicts (solve)
+  ----------> add || commit 
+5- git switch master 
+6- git status (add || commit)
+7- git merge navbar
+8- check if their any conflicts or not 
+-------> if any conflicts (solve)
+  ----------> add || commit 
+
+
+=================> local ==> remote
+1- git switch branch
+2- git push origin navbar
+
+==========> delete brach 
+1- local 
+git switch on another branch
+git branch -D branchName
+2- remote
+git switch on another branch
+git push origin  -d branchName
+
+================ Remote 
+merege changes in remote on local
+--- Pull Request
+master , navbar 
+1- git switch navbar
+2- git status (add || commit)
+3- 3- git pull origin navbar
+4- git status (add || commit)
+5- git pull origin master 
+-------->  check if their any conflicts or not 
+-------> if any conflicts (solve)
+----------> add || commit 
+6- git switch master
+7- git pull origin master  
+8- git status (add || commit)
+9- git pull origin navbar 
+-------->  check if their any conflicts or not 
+-------> if any conflicts (solve)
+----------> add || commit 
+
