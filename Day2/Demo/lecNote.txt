@@ -39,3 +39,24 @@ move to branch ==>git switch branchName
 
 
 create + switch ==> git switch -c  branchName
+list branches ==> git branch
+
+===================> Merge branches with master
+small --> big
+master ---> navbar
+smmall ===>
+1- git switch navbar
+2- git status (add || commit)
+3- git merge master 
+4- check if their any conflicts or not 
+-------> if any conflicts (solve)
+  ----------> add || commit 
+5- git switch master 
+6- git status (add || commit)
+7- git merge navbar
+8- check if their any conflicts or not 
+-------> if any conflicts (solve)
+  ----------> add || commit 
+
+
+
