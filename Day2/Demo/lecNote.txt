@@ -59,4 +59,8 @@ smmall ===>
   ----------> add || commit 
 
 
+=================> local ==> remote
+1- git switch branch
+2- git push origin navbar
+
 
