@@ -133,11 +133,11 @@ stash ==> queue (last in first out)
 
 make stash : git stash 
 list stash : git stash list
-clear stash : git stash clear
+clear stash : git stash clear (remove all stashed)
 show file stashed : git stash show (show file that have stash)
 show  content stashed: git stash pop (show content + remove from queue)
 show  content stashed: git stash apply (show content + save in queue)
-
+delete specific stash : git stash drop id_stash(stash@{0})
 
 
 -----------> more than one stash 
