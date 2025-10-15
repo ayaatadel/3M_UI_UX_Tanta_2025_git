@@ -5,9 +5,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
     <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+      
 </head>
+    <style>
+    body {
+      background-color: #f8fafc;
+      font-family: 'Poppins', sans-serif;
+          }
+          .navbar {
+        background-color: #222;
+        padding: 15px 0;
+        text-align: center;
+      }
+
+      .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      
+      }
+
+      .navbar li {
+        display: inline-block;
+        margin: 0 20px;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: #00bcd4;
+        font-weight: 500;
+        font-size: 18px;
+        transition: color 0.3s ease;
+      }
+
+      .navbar a:hover {
+        color: #00bcd4;
+      }
+
+      .navbar a.active {
+        color: #00bcd4;
+        border-bottom: 2px solid #00bcd4;
+      }
+      .navbar {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 15px 0;
+  text-align: center;
+}
+
+
+
+.nav-btn {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #0097a7;
+}
+    .service-card {
+      border: none;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 25px 20px;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+    }
+    .service-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px auto;
+      color: #fff;
+      font-size: 28px;
+    }
+    .icon-shipping { background: linear-gradient(135deg, #3b82f6, #06b6d4); }
+    .icon-secure  { background: linear-gradient(135deg, #10b981, #06b6d4); }
+    .icon-support { background: linear-gradient(135deg, #f59e0b, #ef4444); }
+    .icon-returns { background: linear-gradient(135deg, #8b5cf6, #6366f1); }
+    .section-title {
+      font-weight: 700;
+      color: #1f2937;
+    }
+    .section-subtitle {
+      color: #6b7280;
+      margin-bottom: 40px;
+    }
+
+
+    .service-map{
+      width: 100vw;
+      padding: 20px;
+      margin: 10px;
+      background-color: #d3d3d3;
+      display: flex;
+      justify-content: center;
+      
+    }
+    .service-map img{
+      width: 40%;
+      
+    }
+  </style>
 <body>
-     
+<nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services" class="active">Services</a></li>
+      <li><button class="nav-btn">Contact</button></li>
+    </ul>
+  </nav>
+    <!-- servcie section -->
+    <section class="container py-5">
+    <div class="text-center mb-5">
+      <h6 class="text-primary fw-bold">Our Services</h6>
+      <h2 class="section-title">Why Shop With Us</h2>
+      <p class="section-subtitle">Enjoy a seamless shopping experience with fast delivery, secure payments, and 24/7 support.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Service 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="service-card text-center p-4">
+          <div class="service-icon icon-shipping mb-3">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h5 class="fw-semibold">Fast Shipping</h5>
+          <p class="text-muted mb-3">Get your orders quickly with next-day and same-day delivery options.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="service-card text-center p-4">
+          <div class="service-icon icon-secure mb-3">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <h5 class="fw-semibold">Secure Payments</h5>
+          <p class="text-muted mb-3">All transactions are protected with advanced encryption and fraud checks.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="service-card text-center p-4">
+          <div class="service-icon icon-support mb-3">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h5 class="fw-semibold">24/7 Support</h5>
+          <p class="text-muted mb-3">Our team is here around the clock to assist with your orders and questions.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Contact Us</a>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="service-card text-center p-4">
+          <div class="service-icon icon-returns mb-3">
+            <i class="fa-solid fa-box-open"></i>
+          </div>
+          <h5 class="fw-semibold">Easy Returns</h5>
+          <p class="text-muted mb-3">Hassle-free returns within 30 days for a worry-free shopping experience.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Read Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    
+     <!-- form  -->
     <section class="service-article">
         <p>
           This section represents one of our service areas.  
@@ -19,220 +208,32 @@
      <img src="../images/map.jpg">
     </section>
     
-<section>
-  <title>Contact — Responsive Form</title>
-  <style>
-    *,*::before,*::after{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#0b1220;background:linear-gradient(180deg,#f6fbff 0%, #ffffff 100%);display:flex;align-items:center;justify-content:center;padding:32px}
+<section style="background:#fff;padding:20px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.08);width:100%;max-width:420px;margin:auto;">
+  <h2 style="margin:0 0 12px;text-align:center;color:#333;">Contact Us</h2>
 
-    .card{width:100%;max-width:920px;background:#fff;border-radius:14px;box-shadow:0 8px 30px rgba(11,18,32,.08);overflow:hidden;display:grid;grid-template-columns:1fr 420px}
-    @media (max-width:880px){.card{grid-template-columns:1fr;padding:0} .aside{display:none}}
+  <form style="display:flex;flex-direction:column;gap:10px;">
+    <label for="name" style="font-size:14px;color:#555;">Name</label>
+    <input id="name" name="name" required
+           placeholder="Your name"
+           style="padding:10px;border:1px solid #ccc;border-radius:6px;font-size:14px;width:100%;box-sizing:border-box;" />
 
-    .main{padding:40px 48px}
-    @media (max-width:520px){.main{padding:24px}}
+    <label for="email" style="font-size:14px;color:#555;margin-top:6px;">Email</label>
+    <input id="email" name="email" type="email" required
+           placeholder="you@example.com"
+           style="padding:10px;border:1px solid #ccc;border-radius:6px;font-size:14px;width:100%;box-sizing:border-box;" />
 
-    h1{margin:0 0 8px;font-size:20px}
-    p.lead{margin:0 0 20px;color:#556677}
+    <label for="message" style="font-size:14px;color:#555;margin-top:6px;">Message</label>
+    <textarea id="message" name="message" required
+              placeholder="Write your message..."
+              style="padding:10px;border:1px solid #ccc;border-radius:6px;font-size:14px;width:100%;height:120px;box-sizing:border-box;resize:vertical;"></textarea>
 
-    form{display:flex;flex-direction:column;gap:12px}
-    .row{display:flex;gap:12px}
-    .row .field{flex:1}
-
-    label{display:block;font-size:13px;color:#344055;margin-bottom:6px}
-    input[type="text"],input[type="email"],input[type="tel"],textarea,select{
-      width:100%;padding:12px 14px;border-radius:10px;border:1px solid #e6edf3;background:#fbfdff;font-size:14px;color:#0b1220;outline:none;transition:box-shadow .15s,border-color .15s
-    }
-    input:focus,textarea:focus,select:focus{border-color:#6aa7ff;box-shadow:0 6px 18px rgba(106,167,255,.12)}
-    textarea{min-height:140px;resize:vertical}
-
-    .small{font-size:12px;color:#718096}
-    .errors{color:#d23f44;font-size:13px;margin-top:6px}
-
-    .controls{display:flex;align-items:center;gap:12px;margin-top:8px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:10px;border:0;background:#0b79ff;color:#fff;font-weight:600;cursor:pointer}
-    .btn[disabled]{opacity:.6;cursor:not-allowed}
-
-    .btn-alt{background:#f3f7fb;color:#0b1220;border:1px solid #e6edf3}
-
-    .aside{background:linear-gradient(180deg,#f7fbff,#ffffff);padding:28px 24px;border-left:1px solid #f1f5f9}
-    .meta{font-size:13px;color:#344055}
-    .meta h3{margin:0 0 8px;font-size:16px}
-    .contact-list{margin:14px 0 0;padding:0;list-style:none}
-    .contact-list li{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px dashed #eef3f7}
-
-    .toast{position:fixed;right:20px;bottom:20px;background:#0b79ff;color:#fff;padding:12px 16px;border-radius:10px;box-shadow:0 8px 22px rgba(11,18,32,.12);display:flex;gap:12px;align-items:center}
-
-    :focus{outline:3px solid rgba(11,121,255,.12);outline-offset:2px}
-
-    .char-counter{margin-left:auto;font-size:12px;color:#94a3b8}
-  </style>
-</head>
-<body>
-  <div class="card" role="region" aria-label="Contact form">
-    <main class="main">
-      <h1>Contact us</h1>
-      <p class="lead">Have a question, feedback or want a quote? Send us a message and we'll get back within 1–2 business days.</p>
-
-      <form id="contactForm" novalidate>
-        <div class="row">
-          <div class="field">
-            <label for="name">Full name <span aria-hidden="true">*</span></label>
-            <input id="name" name="name" type="text" inputmode="text" autocomplete="name" required minlength="2" placeholder="Your full name" />
-            <div class="errors" id="err-name" aria-live="polite"></div>
-          </div>
-          <div class="field">
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="^\+?[0-9 \-()]{6,}$" placeholder="Optional — +20123..." />
-            <div class="errors" id="err-phone" aria-live="polite"></div>
-          </div>
-        </div>
-
-        <div>
-          <label for="email">Email <span aria-hidden="true">*</span></label>
-          <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
-          <div class="errors" id="err-email" aria-live="polite"></div>
-        </div>
-
-        <div>
-          <label for="subject">Subject</label>
-          <input id="subject" name="subject" type="text" placeholder="What's this about?" maxlength="80" />
-          <div class="small">Max 80 characters</div>
-        </div>
-
-        <div>
-          <label for="message">Message <span aria-hidden="true">*</span></label>
-          <textarea id="message" name="message" required minlength="10" maxlength="1200" placeholder="Tell us what's on your mind..."></textarea>
-          <div style="display:flex;align-items:center;margin-top:6px">
-            <div class="errors" id="err-message" aria-live="polite"></div>
-            <div class="char-counter" id="charCount">0/1200</div>
-          </div>
-        </div>
-
-        <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:6px">
-          <label style="display:flex;gap:8px;align-items:center">
-            <input id="subscribe" name="subscribe" type="checkbox" />
-            <span class="small">Subscribe to newsletter</span>
-          </label>
-
-          <label style="display:flex;gap:8px;align-items:center">
-            <input id="urgent" name="urgent" type="checkbox" />
-            <span class="small">Mark as urgent</span>
-          </label>
-        </div>
-
-        <div class="controls">
-          <button type="submit" class="btn" id="submitBtn">Send message</button>
-          <button type="button" class="btn btn-alt" id="resetBtn">Reset</button>
-          <div style="margin-left:auto;" class="small">Required fields marked with *</div>
-        </div>
-      </form>
-    </main>
-
-    <aside class="aside" aria-hidden="false">
-      <div class="meta">
-        <h3>Other ways to reach us</h3>
-        <ul class="contact-list">
-          <li><strong>Email:</strong><div style="margin-left:auto">support@wearopia.com</div></li>
-          <li><strong>Phone:</strong><div style="margin-left:auto">+20 123 456 789</div></li>
-          <li><strong>Address:</strong><div style="margin-left:auto">Tanta, Egypt</div></li>
-        </ul>
-        <p style="margin-top:12px;font-size:13px;color:#5b6b7a">We usually reply within 1–2 business days. For urgent matters, toggle <strong>Mark as urgent</strong>.</p>
-      </div>
-    </aside>
-  </div>
-
-  <div id="toast" class="toast" style="display:none" role="status" aria-live="polite">Message sent ✓</div>
-
-  <script>
-    (function(){
-      const form = document.getElementById('contactForm');
-      const submitBtn = document.getElementById('submitBtn');
-      const resetBtn = document.getElementById('resetBtn');
-      const charCount = document.getElementById('charCount');
-      const toast = document.getElementById('toast');
-
-      const errors = {
-        name: document.getElementById('err-name'),
-        phone: document.getElementById('err-phone'),
-        email: document.getElementById('err-email'),
-        message: document.getElementById('err-message')
-      };
-
-      const validators = {
-        name: value => value.trim().length >= 2 || 'Please enter your name (min 2 characters).',
-        phone: value => {
-          if(!value) return true; 
-          return /^\+?[0-9 \-()]{6,}$/.test(value) || 'Please enter a valid phone number.';
-        },
-        email: value => /^(?:[^@\s]+)@(?:[^@\s]+\.[^@\s]+)$/.test(value) || 'Please enter a valid email address.',
-        message: value => value.trim().length >= 10 || 'Message is too short (min 10 characters).'
-      };
-
-      const messageEl = document.getElementById('message');
-      messageEl.addEventListener('input', e => {
-        charCount.textContent = `${e.target.value.length}/1200`;
-      });
-
-      function clearErrors(){
-        Object.values(errors).forEach(el=>el.textContent='');
-      }
-
-      function validate(){
-        clearErrors();
-        const data = new FormData(form);
-        let ok = true;
-        for(const [k,fn] of Object.entries(validators)){
-          const val = (data.get(k)||'').toString();
-          const res = fn(val);
-          if(res !== true){
-            errors[k].textContent = res;
-            ok = false;
-          }
-        }
-        return ok;
-      }
-
-      form.addEventListener('submit', async (e)=>{
-        e.preventDefault();
-        if(!validate()) return;
-
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Sending...';
-
-        await new Promise(r => setTimeout(r, 900));
-
-        toast.style.display = 'flex';
-        setTimeout(()=>{ toast.style.display='none'; }, 2800);
-
-        toast.focus?.();
-
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send message';
-
-        form.reset();
-        charCount.textContent = '0/1200';
-      });
-
-      resetBtn.addEventListener('click', ()=>{
-        form.reset();
-        clearErrors();
-        charCount.textContent = '0/1200';
-      });
-
-      ['name','email','phone','message'].forEach(id=>{
-        const el = document.getElementById(id);
-        el.addEventListener('blur', ()=>{
-          const val = el.value || '';
-          const res = validators[id](val);
-          errors[id].textContent = res === true ? '' : res;
-        });
-      });
-
-    })();
-  </script>
+    <button type="submit"
+            style="margin-top:6px;background:#28a745;color:#fff;border:0;padding:10px;border-radius:6px;font-size:16px;cursor:pointer;">
+      Send
+    </button>
+  </form>
 </section>
->>>>>>> 7bb561cfa348ab431fcb72a38c4e540401257938
-
+<!--bootsrtap library  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
