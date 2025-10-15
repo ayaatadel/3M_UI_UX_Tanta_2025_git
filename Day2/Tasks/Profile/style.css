@@ -1,5 +1,5 @@
 /* Services */
-.navbar {
+  .navbar {
   background-color: #222;
   padding: 15px 0;
   text-align: center;
@@ -29,9 +29,35 @@
 }
 
 .navbar a.active {
-  color: #00bcd4;
+  color: #00bcd4 !important;;
   border-bottom: 2px solid #00bcd4;
 }
+  
+    .form-control {
+      border-radius: 20px;
+    }
+
+    .search-btn {
+      background-color: #00bcd4;
+      border-radius: 50%;
+      color: #fff;
+      border: none;
+      padding: 6px 10px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      font-size: 1.2rem;
+      margin-left: 10px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #FAFDD6;
+    }
+
+
+
 .icon-buttons {
     /* Define the size of the button based on the icon size */
     width: 30px;
