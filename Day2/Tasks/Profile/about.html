@@ -12,52 +12,40 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    .navbar {
-      background-color: #647FBC; 
-    }
+    
+   .navbar {
+  background-color: #222;
+  padding: 15px 0;
+  text-align: center;
+}
 
-    .navbar-brand,
-    .nav-link {
-      color: #fff !important;
-      font-weight: 500;
-    }
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-    .nav-link:hover {
-      color: #FAFDD6 !important;
-    }
+.navbar li {
+  display: inline-block;
+  margin: 0 20px;
+}
 
-    .nav-link.active {
-      color: #FAFDD6 !important;
-      font-weight: 600;
-      border-bottom: 2px solid #FAFDD6; 
-    }
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
 
-    .form-control {
-      border-radius: 20px;
-    }
+.navbar a:hover {
+  color: #00bcd4;
+}
 
-    .search-btn {
-      background-color: #91ADC8;
-      border-radius: 50%;
-      color: #fff;
-      border: none;
-      padding: 6px 10px;
-    }
-
-    .social-icons a {
-      color: #fff;
-      font-size: 1.2rem;
-      margin-left: 10px;
-      transition: color 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #FAFDD6;
-    }
-     body {
-      background: #f8f9fa;
-      font-family: "Poppins", sans-serif;
-    }
+.navbar a.active {
+  color: #00bcd4 !important;;
+  border-bottom: 2px solid #00bcd4;
+}
 
     .carousel-item img {
       height: 350px;
@@ -201,15 +189,15 @@
 
 
      <nav class="navbar">
-      HEAD
-      <ul>
+
+      <ul class="mx-auto">
         <li><a href="#home">Home</a></li>
         <li><a href="#about" class="active">About</a></li>
         <li><a href="#services" >Services</a></li>
       </ul>
-      <button class="btn btn-light ms-3">Sign Up</button>
+      <button class="btn btn-light me-3">Sign Up</button>
     </nav>
-
+<!-- *******************slider****************** -->
 
   <div id="placesCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
