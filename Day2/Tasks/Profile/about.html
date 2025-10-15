@@ -8,6 +8,8 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
   <style>
     .navbar {
@@ -80,6 +82,137 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       padding-bottom: 15px;
     }
+     /* Footer container */
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      background-color: #0b1622;
+      padding: 40px 80px;
+    }
+
+    /* Map */
+    .footer-map iframe {
+      width: 600px;
+      height: 350px;
+      border: 0;
+      border-radius: 8px;
+      filter: grayscale(80%);
+    }
+
+    /* Info section */
+    .footer-info {
+      flex: 1;
+      margin-left: 40px;
+    }
+
+    .footer-info h2 {
+      font-size: 26px;
+      color: #d4a373;
+      margin-bottom: 10px;
+    }
+
+    .footer-info p {
+      line-height: 1.6;
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .footer-info a {
+      color: #d4a373;
+      text-decoration: none;
+    }
+
+    .footer-info .phone {
+      font-size: 18px;
+      margin-bottom: 20px;
+      display: block;
+      color: #d4a373;
+    }
+
+    /* Social icons */
+    .social-icons a {
+      display: inline-block;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background-color: #d4a373;
+      color: #0b1622;
+    }
+
+    /* Links section */
+    .footer-links {
+      margin-top: 30px;
+    }
+
+    .footer-links h3 {
+      color: #d4a373;
+      margin-bottom: 10px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links ul li {
+      margin: 8px 0;
+    }
+
+    .footer-links ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links ul li a:hover {
+      color: #d4a373;
+    }
+
+    /* Copyright */
+    .footer-bottom {
+      text-align: center;
+      padding: 20px;
+      background-color: #09111b;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .footer-bottom a {
+      color: #d4a373;
+      text-decoration: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 1000px) {
+      .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+      }
+
+      .footer-map iframe {
+        width: 100%;
+        height: 300px;
+      }
+
+      .footer-info {
+        margin-left: 0;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
@@ -150,6 +283,51 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+   <!-- Footer Section  Hany Mamdouh Ramadhan Makled-->
+  <footer>
+    <div class="footer">
+      <!-- Map -->
+      <div class="footer-map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24160.425208170453!2d-74.01851696556889!3d40.71272817810288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316cc70cb3%3A0x3b3b8b9afef30f21!2sNew%20York%2C%20USA!5e0!3m2!1sen!2seg!4v1694700000000!5m2!1sen!2seg"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Info + Links -->
+      <div class="footer-info">
+        <h2>Tailor.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+           Quisque ut lacus vel arcu porta luctus.</p>
+        <a href="tel:807833673904" class="phone">(80) 783 367-3904</a>
+
+        <!-- Social -->
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links">
+          <h3>Our Solutions</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy;2025 All rights reserved | This template is made by 
+      <a href="https://colorlib.com" target="_blank">Hany Mamdouh Ramadhan Makled</a>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
