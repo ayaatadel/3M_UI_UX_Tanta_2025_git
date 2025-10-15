@@ -1,4 +1,4 @@
-/* Services */
+/*nav bar  Services -about-home*/
   .navbar {
   background-color: #222;
   padding: 15px 0;
@@ -37,25 +37,38 @@
       border-radius: 20px;
     }
 
-    .search-btn {
-      background-color: #00bcd4;
-      border-radius: 50%;
-      color: #fff;
-      border: none;
-      padding: 6px 10px;
+  /* *******************about carcoul********* */
+body {
+      background: #f8f9fa;
+      font-family: "Poppins", sans-serif;
     }
 
-    .social-icons a {
-      color: #fff;
-      font-size: 1.2rem;
-      margin-left: 10px;
-      transition: color 0.3s;
+    .carousel-item img {
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
     }
 
-    .social-icons a:hover {
-      color: #FAFDD6;
+    .carousel-caption {
+      position: static;
+      padding: 10px 0;
+      color: #333;
+      font-weight: 600;
+      font-size: 18px;
     }
 
+    .carousel {
+      width: 400px;
+      margin: 60px auto;
+      text-align: center;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding-bottom: 15px;
+    }
+
+
+  /* ****************** */
 
 
 .icon-buttons {
