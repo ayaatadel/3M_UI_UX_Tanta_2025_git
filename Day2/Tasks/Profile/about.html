@@ -50,29 +50,41 @@
   border-bottom: 2px solid #00bcd4;
 }
 
+body {
+      background: #f8f9fa;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
     .carousel-item img {
-      height: 350px;
+      height: 500px;
       object-fit: cover;
-      border-radius: 10px;
+      width: 100%;
     }
 
     .carousel-caption {
-      position: static;
-      padding: 10px 0;
-      color: #333;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 8px;
       font-weight: 600;
       font-size: 18px;
     }
 
     .carousel {
-      width: 400px;
-      margin: 60px auto;
-      text-align: center;
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding-bottom: 15px;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      border-radius: 0;
+      box-shadow: none;
     }
+
+    
      /* Footer container style */
     .footer {
       display: flex;
@@ -203,7 +215,7 @@
     </nav>
 <!-- *******************slider****************** -->
 
-  <div id="placesCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="placesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" class="d-block w-100" alt="Eiffel Tower">
@@ -211,8 +223,9 @@
       </div>
 
       <div class="carousel-item">
-        <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60b" class="d-block w-100" alt="Statue of Liberty">
-        <div class="carousel-caption">Statue of Liberty – New York</div>
+        
+        <img src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=1200" class="d-block w-100" alt="Blue Mosque">
+        <div class="carousel-caption">London</div>
       </div>
 
       <div class="carousel-item">
@@ -220,6 +233,7 @@
         <div class="carousel-caption">Great Wall – China</div>
       </div>
     </div>
+
     <button class="carousel-control-prev" type="button" data-bs-target="#placesCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
